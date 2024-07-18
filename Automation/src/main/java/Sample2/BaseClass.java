@@ -24,6 +24,6 @@ public class BaseClass {
 	public void DriverQuit() {
 		driver.close();
 		
-	}
+	} 
 
 }

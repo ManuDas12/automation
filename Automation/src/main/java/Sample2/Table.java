@@ -21,6 +21,7 @@ public class Table extends BaseClass {
 		System.out.println("========================");
 		obj.selectColumn();
 		System.out.println("========================");
+		obj.selectColumnFromRow();
 	}
 	
 	public void fullTable() {
@@ -56,6 +57,14 @@ public class Table extends BaseClass {
 		for(WebElement option:column) {
 			System.out.println(option.getText());
 		}
+	}
+	public void selectColumnFromRow() {
+		driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
+		List<WebElement> rowColumn=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr[5]/td[3]"));
+		for(WebElement option:rowColumn) {
+			System.out.println(option.getText());  
+		}
+		
 	}
 
 }
