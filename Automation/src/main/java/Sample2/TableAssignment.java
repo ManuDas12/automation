@@ -19,6 +19,7 @@ public class TableAssignment extends BaseClass {
 		System.out.println("==========");
 		obj.selectColumn();
 		
+		
 	}
 	
 	public void fullTable4() {
