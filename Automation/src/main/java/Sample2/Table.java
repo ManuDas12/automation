@@ -64,6 +64,7 @@ public class Table extends BaseClass {
 		for(WebElement option:rowColumn) {
 			System.out.println(option.getText());  
 		}
+	
 		
 	}
 
