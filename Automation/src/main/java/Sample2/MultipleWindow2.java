@@ -44,7 +44,8 @@ public class MultipleWindow2 {
 				text1.sendKeys("New Agenda");
 				WebElement text2=driver.findElement(By.xpath("//li[text()=' Go to potion class']"));
 				text2.click();
-			}
+				WebElement delete=driver.findElement(By.xpath("//i[@class='fa fa-trash']"));
+				delete.click();
 			if(title.equals("WebDriver | Scrolling")) {
 				WebElement  scroll1=driver.findElement(By.xpath("//div[@id='zone1']"));
 				scroll1.click();
@@ -52,5 +53,7 @@ public class MultipleWindow2 {
 			driver.switchTo().window(parentName);
 		}
 	}
-
+	}
 }
+
+

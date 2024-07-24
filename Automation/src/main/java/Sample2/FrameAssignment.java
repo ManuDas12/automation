@@ -15,12 +15,12 @@ WebDriver driver;
 
 	public void launch() {
 	driver=new ChromeDriver();
-	driver.get("https://www.javatpoint.com/python-tutorial");
+	driver.get("https://demo.guru99.com/test/guru99home/");
 	driver.manage().window().maximize();	
 	
-	WebElement iframe=driver.findElement(By.xpath("//iframe[@src='https://www.youtube.com/embed/RbSlW8jZFe8']"));
-	driver.switchTo().frame(iframe);
-	WebElement frameSample=driver.findElement(By.xpath("//iframe[@src='https://www.youtube.com/embed/RbSlW8jZFe8]"));
+//	WebElement iframe=driver.findElement(By.xpath("//iframe[@wmode='transparent']"));
+	//driver.switchTo().frame(iframe);
+	WebElement frameSample=driver.findElement(By.xpath("//iframe[@src='https://www.youtube.com/embed/RbSlW8jZFe8']"));
 	frameSample.click(); 
 		
 	}
