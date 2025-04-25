@@ -16,8 +16,11 @@ public class DragnDrop extends BaseClass {
 	public void dragDrop() {
 		WebElement drag=driver.findElement(By.id("others"));
 		drag.click();
+		
+		
 		WebElement drop=driver.findElement(By.xpath("//span[text()='Draggable n°1']"));
 		WebElement dropmove=driver.findElement(By.id("mydropzone"));
+		
 		Actions actions=new Actions(driver);
 		actions.dragAndDrop(drop,dropmove).perform();
 	}

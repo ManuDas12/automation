@@ -25,7 +25,7 @@ WebDriver driver;
 		
 		String parentName=driver.getWindowHandle();
 		System.out.println(parentName);
-		
+
 		Set<String> allWindow=driver.getWindowHandles();
 		String title="";
 		for(String temp:allWindow) {
